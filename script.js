@@ -39,7 +39,6 @@ const submitButton = function () {
     if (input.validity.valueMissing) {
       errorMessage.textContent =
         'Whoops! It looks like you forgot to add your email';
-        console.log(errorMessage);
     } else if (input.validity.typeMismatch) {
       errorMessage.textContent = 'Please provide a valid email address';
     }
@@ -48,7 +47,6 @@ const submitButton = function () {
   }
 };
 
-// input.addEventListener('input', submitButton);
 button.addEventListener('click', submitButton);
 
 input.addEventListener('keypress', function (e) {
