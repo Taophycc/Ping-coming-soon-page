@@ -34,7 +34,6 @@ document.addEventListener('keydown', function (e) {
 });
 
 // Input and submit form validations
-Input and submit form validations
 const submitButton = function () {
   if (!input.checkValidity()) {
     if (input.validity.valueMissing) {
@@ -49,7 +48,6 @@ const submitButton = function () {
   }
 };
 
-// input.addEventListener('input', submitButton);
 button.addEventListener('click', submitButton);
 
 input.addEventListener('keydown', function (e) {
