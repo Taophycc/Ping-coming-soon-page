@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links 📎
 
-- Solution URL: [taophycc.github.com](https://your-solution-url.com)
-- Live Site URL: [taophycc.github.io](https://your-live-site-url.com)
+- Solution URL: [taophycc.github.com](https://github.com/Taophycc/Ping-coming-soon-page.git)
+- Live Site URL: [taophycc.github.io](https://taophycc.github.io/Ping-coming-soon-page/)
 
 ## My process
 
