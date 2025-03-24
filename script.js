@@ -35,23 +35,21 @@ document.addEventListener('keydown', function (e) {
 
 // Input and submit form validations
 const submitButton = function () {
-  if (!input.checkValidity()) {
-    if (input.validity.valueMissing) {
-      errorMessage.textContent =
-        'Whoops! It looks like you forgot to add your email';
-    } else if (input.validity.typeMismatch) {
-      errorMessage.textContent = 'Please provide a valid email address';
-    }
+  if (input.validity.valueMissing) {
+    errorMessage.textContent =
+      'Whoops! It looks like you forgot to add your email';
+  } else if (input.validity.typeMismatch) {
+    errorMessage.textContent = 'Please provide a valid email address';
   } else {
     errorMessage.textContent = '';
   }
 };
 
+input.addEventListener('input', submitButton);
 button.addEventListener('click', submitButton);
 
-input.addEventListener('keypress', function (e) {
+document.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
-    e.preventDefault;
     submitButton();
   }
 });
