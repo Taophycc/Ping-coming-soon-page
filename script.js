@@ -55,4 +55,4 @@ input.addEventListener('keydown', function (e) {
     e.preventDefault;
     submitButton();
   }
-}
+});
