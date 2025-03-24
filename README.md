@@ -1,8 +1,8 @@
-# Frontend Mentor - Ping coming soon page solution
+# Frontend Mentor - Ping coming soon page solution 👨🏾‍💻
 
 This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
+## Table of contents 📜
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -15,9 +15,9 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - [Author](#author)
 
 
-## Overview
+## Overview 📝
 
-### The challenge 👨🏾‍💻
+### The challenge ⚙️
 
 Users should be able to:
 
@@ -30,7 +30,8 @@ Users should be able to:
 
 ### Screenshot 🌠
 
-!()
+![image](https://github.com/user-attachments/assets/17ba7a67-da4d-4864-b710-400f1479a7d4)
+
 
 ### Links 📎
 
