@@ -52,7 +52,7 @@ const submitButton = function () {
 // input.addEventListener('input', submitButton);
 button.addEventListener('click', submitButton);
 
-input.addEventListener('keypress', function (e) {
+input.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     e.preventDefault;
     submitButton();
