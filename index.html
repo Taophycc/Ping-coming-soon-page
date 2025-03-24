@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/menu-outline.svg" alt="menu" class="menu" />
+      <div class="logo"><img src="images/logo.svg" alt="logo image" /></div>
+      <h2><span>We are launching</span> soon!</h2>
+      <p>Subscribe and get notified</p>
+    </header>
+
+    <main class="main">
+      <div class="email-section">
+        <input
+          id="input"
+          type="email"
+          placeholder="Your email address..."
+          required
+        />
+        <p id="error-message"></p>
+        <button class="btn">Notify Me<a href="#"></a></button>
+      </div>
+      <div class="main-image">
+        <img
+          class="image"
+          src="images/illustration-dashboard.png"
+          alt="illustration dashboard"
+        />
+      </div>
+    </main>
+
+    <div class="menu-dropdown hidden">
+      <ul class="list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>LogIn</li>
+        <li>SignUp</li>
+      </ul>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <footer class="footer">
+      <div class="socials">
+        <div>
+          <img src="images/facebook-f-brands.svg" class="logo" alt="facebook" />
+        </div>
+        <div>
+          <img src="images/twitter-brands.svg" class="logo" alt="twitter" />
+        </div>
+        <div>
+          <img src="images/instagram-brands.svg" class="logo" alt="instagram" />
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+    </footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="x.com/taophyc_">Taophyc</a>.
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --gray: hsl(0, 0%, 59%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Blue: hsl(223, 87%, 63%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+  --Font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'libre franklin', sans-serif;
+  font-size: var(--Font-size);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em 1.5em 1em 1.5em;
+  z-index: 9999;
+}
+
+.logo {
+  margin: 2em auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.56rem;
+  text-align: center;
+  margin-bottom: 1em;
+  transition: all 0.4s ease-in;
+  color: var(--Very-Dark-Blue);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+span {
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1.5em;
+}
+
+#input {
+  width: 100%;
+  margin: 1em auto;
+  outline: var(--Pale-Blue) 1px solid;
+  border: none;
+  padding: 1.2em;
+  padding-left: 2em;
+  border-radius: 30px;
+  font-weight: 300;
+}
+
+#input::placeholder {
+  color: hsl(223, 100%, 88%);
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+#input:user-invalid {
+  outline: var(--Light-Red) 1px solid;
+  border: none;
+}
+
+.btn {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5.5em;
+  background-color: var(--Blue);
+  border: none;
+  padding: 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(0.5px);
+  transition: all 0.2s ease;
+  filter: brightness(120%) drop-shadow(5px 5px 20px var(--Pale-Blue));
+}
+
+button:hover {
+  filter: brightness(120%) drop-shadow(5px 5px 20px var(--Pale-Blue));
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.socials div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid var(--Pale-Blue) 1px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.socials div:hover {
+  border: var(--Blue) solid;
+}
+
+.copyright p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+
+.menu {
+  position: sticky;
+  height: 40px;
+  width: 40px;
+  right: 100%;
+  z-index: 9999;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 3em;
+  height: 55%;
+  width: 90%;
+  left: 1em;
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-radius: 15px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 2em;
+  list-style: none;
+  color: var(--Very-Dark-Blue);
+}
+
+.list li {
+  margin-bottom: 2em;
+  border-bottom: 1px solid var(--gray);
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.attribution a {
+  color: var(--Very-Dark-Blue);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
+
+#error-message {
+  color: var(--Light-Red);
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) {
+  .header {
+    padding: 2.5em 2.5em 1.5em 2.5em;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #input {
+    width: 70%;
+    margin: 0;
+  }
+
+  .btn {
+    width: 70%;
+    margin-bottom: 6em;
+  }
+
+  .email-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .main-image {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .header {
+    padding: 2em 2.5em 2em 2.5em;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .email-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    margin-bottom: 3em;
+  }
+
+  #input {
+    width: 30%;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--Very-Dark-Blue);
+  }
+
+  .btn {
+    width: 17%;
+    margin: 0;
+  }
+
+  .main-image {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #error-message {
+    position: absolute;
+    top: 24em;
+    margin-bottom: 0;
+  }
+}
