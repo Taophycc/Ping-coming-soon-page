@@ -17,7 +17,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ## Overview
 
-### The challenge
+### The challenge 👨🏾‍💻
 
 Users should be able to:
 
@@ -28,18 +28,18 @@ Users should be able to:
 	- The `input` field is empty. The message for this error should say *"Whoops! It looks like you forgot to add your email"*
 	- The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Please provide a valid email address"*
 
-### Screenshot
+### Screenshot 🌠
 
 !()
 
-### Links
+### Links 📎
 
 - Solution URL: [taophycc.github.com](https://your-solution-url.com)
 - Live Site URL: [taophycc.github.io](https://your-live-site-url.com)
 
 ## My process
 
-### Built with
+### Built with 🛠🧱
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -48,7 +48,7 @@ Users should be able to:
 - Mobile-first workflow
 - Javascript 
 
-### What I learned
+### What I learned 📚
 
 - How to toggle a menu icon using javascript
 
@@ -91,13 +91,13 @@ const submitButton = function () {
 };
 ```
 
-### Useful resources
+### Useful resources 📚
 
 - [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation#different_types_of_client-side_validation) - This helped with the email form validations.
 - [Frontend mentor community](https://frontendmentor.io) - Frontend mentor has an amazing community on discord for help and discussions.
 
 
-## Author
+## Author ✍️
 
 - Website - [taophycc.github.com](https://www.github.com/taophycc)
 - Frontend Mentor - [@taophycc](https://www.frontendmentor.io/taophycc)
